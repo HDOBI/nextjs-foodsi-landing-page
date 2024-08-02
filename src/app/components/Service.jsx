@@ -33,6 +33,7 @@ function Service() {
                 src={item.image}
                 width={500}
                 height={500}
+                alt={item.heading}
                 className="rounded-[25px] sm:rounded-[20px]"
               />
             </div>
