@@ -15,10 +15,10 @@ function Service() {
             }`}
           >
             <div className="lg:w-1/2 flex flex-col gap-4 sm:gap-6 items-center justify-center text-center">
-              <h5 className="max-w-[360px] text-[38px] leading-[42px] sm:text-[42px] sm:leading-[48px] font-semibold">
+              <h5 className="max-w-[340px] text-[40px] leading-[45px] sm:text-[45px] sm:leading-[50px] font-semibold">
                 {item.heading}
               </h5>
-              <p className="max-w-[400px] text-[20px] sm:text-[22px]">
+              <p className="max-w-[400px] text-[20px] sm:text-[24px]">
                 {item.subHeading}
               </p>
             </div>

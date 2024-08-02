@@ -1,7 +1,84 @@
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const myFont = localFont({
+  src: [
+    {
+      path: './assets/fonts/YouTubeSansBlack.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansBold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansDarkBlack.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansDarkBold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansDarkExtrabold.otf',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansDarkLight.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansDarkMedium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansDarkRegular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansDarkSemibold.otf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansExtrabold.otf',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansLight.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansMedium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansRegular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/YouTubeSansSemibold.otf',
+      weight: '600',
+      style: 'normal',
+    },
+  ],
+})
 
 export const metadata = {
   title: "FOODSI",
@@ -14,7 +91,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={myFont.className}>{children}</body>
     </html>
   );
 }
