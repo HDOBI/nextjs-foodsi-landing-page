@@ -11,7 +11,7 @@ function CoverVideo() {
         loop
       />
       <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 p-4">
-        <h1 className="max-w-[500px] text-center text-[33px] leading-[37px] sm:text-[48px] sm:leading-[56px] font-bold px-3 sm:px-0">
+        <h1 className="max-w-[450px] sm:max-w-[500px] text-center text-[33px] leading-[37px] sm:text-[48px] sm:leading-[56px] font-bold px-3 sm:px-0">
           Revolutionizing The Dining Experience{" "}
         </h1>
       </div>
