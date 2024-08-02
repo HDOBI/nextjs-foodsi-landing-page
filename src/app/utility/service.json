@@ -1,0 +1,22 @@
+[
+  {
+    "heading": "Order With Confidence",
+    "subHeading": "Create a sense of transparency by offering pictures, videos, and dish ratings, ensuring your customers always know what to expect.",
+    "image": "/images/s-1.jpg"
+  },
+  {
+    "heading": "Explore Dishes Through Videos",
+    "subHeading": "Scroll through dishes in the form of pictures or videos. Much like TikTok and Instagram, this feature triggers a dopamine release, engaging customers with your menu and encouraging them to explore and order more.",
+    "image": "/images/s-2.jpg"
+  },
+  {
+    "heading": "Personalized Google Reviews",
+    "subHeading": "Our AI technology gathers reviews from Google Maps and allocates them to each dish, making it easier for customers to choose and enjoy their meals with confidence. Diners can also leave reviews directly in the menu, while restaurants can manage negative feedback from the backend.",
+    "image": "/images/s-3.jpg"
+  },
+  {
+    "heading": "Dine with Insights",
+    "subHeading": "Give customers insights into dishes with details like spicy and vegetarian options, calorie counts, prep times, item weights, allergen information.",
+    "image": "/images/s-4.jpg"
+  }
+]
