@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+// import QR from "@/app/assets/images/qr.svg";
 import QR from "@/app/assets/images/qr.svg";
 
 function ScanMe() {
@@ -9,7 +10,7 @@ function ScanMe() {
         Scan <br></br> Me!
       </span>
       <div className="max-w-[75px] sm:max-w-[90px] h-auto">
-        <Image src={QR} alt="QR code" priority={true} />
+        <Image src={QR} alt="QR code" priority={true} quality={50} />
       </div>
     </div>
   );
