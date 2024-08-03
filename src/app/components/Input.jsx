@@ -11,7 +11,7 @@ const Input = ({ type = "text", name, value, onChange, className = "", label }) 
         name={name}
         value={value}
         onChange={onChange}
-        className={`border border-lightGray p-2 w-full h-[40px] outline-none rounded-[7px] ${className}`}
+        className={`border border-lightGray p-2 w-full h-[40px] outline-none rounded-[10px] sm:rounded-[7px] ${className}`}
       />
     </div>
   );

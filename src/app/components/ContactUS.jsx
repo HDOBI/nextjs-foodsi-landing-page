@@ -57,11 +57,11 @@ function ContactUS() {
         rows="5"
         value={userInfo.message}
         onChange={handleChange}
-        className="outline-none border border-lightGray rounded-[7px] p-2"
+        className="outline-none border border-lightGray rounded-[10px] sm:rounded-[7px] p-2"
       />
       <Button
         name="Let's Talk"
-        className="mt-1 sm:mt-2"
+        className="mt-1 sm:mt-2 py-3 sm:py-2 text-[21px] sm:text-[17px]"
         onClick={submitUserData}
       />
       <p className="font-medium text-center sm:text-left">
