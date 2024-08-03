@@ -6,6 +6,7 @@ import Service from "./components/Service";
 import Testimonial from "./components/Testimonial";
 import ContactUS from "./components/ContactUS";
 import Footer from "./components/Footer";
+import Price from "./components/Price";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <CoverVideo />
       <Service />
       <Testimonial />
+      <Price/>
       <ContactUS />
       <Footer/>
     </div>
