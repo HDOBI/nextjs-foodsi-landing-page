@@ -28,8 +28,6 @@ function Hero() {
             height={550}
             alt="Mobile"
             priority={true}
-            blurDataURL="data:..."
-            placeholder="blur"
             quality={50}
           />
         </div>
