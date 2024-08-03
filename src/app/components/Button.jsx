@@ -6,7 +6,7 @@ const Button = ({ className = "", name, onClick }) => {
       onClick={onClick}
       className={`w-full py-2 rounded-[7px] text-white bg-orange font-medium ${className}`}
     >
-      {name}
+     {name}
     </button>
   );
 };
