@@ -16,9 +16,6 @@ module.exports = {
         "orange": "#f87217",
         "whiteSmoke": "#f5f5f5",
       },
-      fontFamily: {
-        sans: ['YouTubeSans', 'Inter', 'sans-serif'],
-      },
     },
   },
   plugins: [],

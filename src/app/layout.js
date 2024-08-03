@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], cache: true });
+const inter = Inter({ subsets: ["latin"] });
 
 const myFont = localFont({
   src: [
@@ -78,8 +78,6 @@ const myFont = localFont({
       style: 'normal',
     },
   ],
-  preload: true,
-  cache: true,
 })
 
 export const metadata = {
