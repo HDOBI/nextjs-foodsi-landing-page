@@ -5,7 +5,7 @@ function CoverVideo() {
     <section className="relative">
       <video
         className="h-[30vh] sm:h-[60vh] w-full object-cover"
-        src="/cover-1080p.mp4"
+        src="videos/cover-1080p.mp4"
         autoPlay
         muted
         loop

@@ -29,13 +29,24 @@ function Service() {
                   : "justify-center lg:justify-end"
               }`}
             >
-              <Image
-                src={item.image}
-                width={500}
-                height={500}
-                alt={item.heading}
-                className="rounded-[25px] sm:rounded-[20px]"
-              />
+              {item.media.endsWith(".mp4") ? (
+                <video
+                  className="w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] object-cover rounded-[27px] sm:rounded-[20px]"
+                  src={item.media}
+                  autoPlay
+                  muted
+                  loop
+                  aria-label="Cover video showing a dining experience"
+                />
+              ) : (
+                <Image
+                  src={item.media}
+                  width={500}
+                  height={500}
+                  alt={item.heading}
+                  className="w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] object-cover rounded-[27px] sm:rounded-[20px]"
+                />
+              )}
             </div>
           </div>
         </div>
