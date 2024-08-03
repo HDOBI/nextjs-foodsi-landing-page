@@ -15,9 +15,9 @@ export default function Home() {
       <CoverVideo />
       <Service />
       <Testimonial />
-      <Price/>
+      <Price />
       <ContactUS />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
