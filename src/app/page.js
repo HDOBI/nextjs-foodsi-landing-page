@@ -4,14 +4,16 @@ import Hero from "./components/Hero";
 import CoverVideo from "./components/CoverVideo";
 import Service from "./components/Service";
 import Testimonial from "./components/Testimonial";
+import ContactUS from "./components/ContactUS";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <CoverVideo />
-      <Service/>
+      <Service />
       <Testimonial />
+      <ContactUS />
     </div>
   );
 }

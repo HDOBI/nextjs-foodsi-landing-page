@@ -2,9 +2,9 @@ import React from "react";
 
 function CoverVideo() {
   return (
-    <section className="relative">
+    <div className="relative">
       <video
-        className="h-[30vh] sm:h-[60vh] w-full object-cover"
+        className="h-[30vh] sm:h-[55vh] w-full object-cover"
         src="videos/cover-1080p.mp4"
         autoPlay
         muted
@@ -16,7 +16,7 @@ function CoverVideo() {
           Revolutionizing The Dining Experience
         </h1>
       </div>
-    </section>
+    </div>
   );
 }
 
