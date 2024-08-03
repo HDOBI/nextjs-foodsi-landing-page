@@ -30,7 +30,7 @@ function Hero() {
             priority={true}
             blurDataURL="data:..."
             placeholder="blur"
-            quality={75}
+            quality={50}
           />
         </div>
       </div>

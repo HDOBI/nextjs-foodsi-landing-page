@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-// import QR from "@/app/assets/images/qr.svg";
 import QR from "@/app/assets/images/qr.svg";
 
 function ScanMe() {
