@@ -18,7 +18,7 @@ function Service() {
               <h5 className="max-w-[340px] text-[40px] leading-[45px] sm:text-[45px] sm:leading-[50px] font-semibold">
                 {item.heading}
               </h5>
-              <p className="max-w-[400px] text-[20px] sm:text-[24px]">
+              <p className="max-w-[400px] text-[20px] leading-[25px] sm:text-[24px] sm:leading-[29px]">
                 {item.subHeading}
               </p>
             </div>

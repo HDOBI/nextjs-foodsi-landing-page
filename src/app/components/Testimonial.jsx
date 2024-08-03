@@ -13,13 +13,15 @@ function testimonial() {
           alt="Foodsi Testimonial Logo"
         />
       </div>
-      <p className="max-w-[350px] sm:max-w-[790px] text-[20px] sm:text-[24px] mt-3 sm:mt-2">
+      <p className="max-w-[350px] sm:max-w-[790px] leading-[25px] sm:text-[24px] sm:leading-[29px] mt-3 sm:mt-2">
         "Switching to Foodsi has been fantastic! We ve seen a boost in customer
         satisfaction and orders since using it. Highly recommend for any
         restaurant looking to modernize!"
       </p>
       <div>
-        <h5 className="text-[20px] sm:text-[24px]">Matthew Monasterio</h5>
+        <h5 className="leading-[25px] sm:text-[24px] sm:leading-[29px]">
+          Matthew Monasterio
+        </h5>
         <span className="text-[16.5px]">JG Restaurant</span>
       </div>
     </div>

@@ -27,7 +27,7 @@ function ContactUS() {
       <h5 className="text-[40px] leading-[45px] sm:text-[45px] sm:leading-[50px] font-semibold text-center">
         Contact us
       </h5>
-      <p className="max-w-[680px] mx-auto text-[20px] sm:text-[24px] sm:leading-[28px] text-center">
+      <p className="max-w-[680px] mx-auto text-[20px] leading-[25px] sm:text-[24px] sm:leading-[29px] text-center">
         We'd love to hear from you. Send us a message and we’ll respond as soon
         as possible.
       </p>
