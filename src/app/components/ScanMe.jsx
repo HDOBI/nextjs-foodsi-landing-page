@@ -9,7 +9,7 @@ function ScanMe() {
         Scan <br></br> Me!
       </span>
       <div className="max-w-[75px] sm:max-w-[90px] h-auto">
-        <Image src={QR} alt="QR code" priority={true} quality={50} blurDataURL="data:..." placeholder="blur" />
+        <Image src={QR} alt="QR code" quality={50} blurDataURL="data:..." placeholder="blur" />
       </div>
     </div>
   );
