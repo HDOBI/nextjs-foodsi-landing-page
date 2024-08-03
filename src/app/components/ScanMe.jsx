@@ -12,7 +12,7 @@ function ScanMe() {
         <Image
           src={QR}
           alt="QR code"
-          priority={true}
+          priority
           quality={25}
           blurDataURL="data:..."
           placeholder="blur"
