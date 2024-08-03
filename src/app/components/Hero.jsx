@@ -23,7 +23,15 @@ function Hero() {
           <ScanMe />
         </div>
         <div className="max-w-[250px] md:max-w-[300px] lg:max-w-[500px]">
-          <Image src={mobile} height={550} alt="Mobile" priority={true} placeholder="blur" quality={75} />
+          <Image
+            src={mobile}
+            height={550}
+            alt="Mobile"
+            priority={true}
+            blurDataURL="data:..."
+            placeholder="blur"
+            quality={75}
+          />
         </div>
       </div>
     </div>
