@@ -30,31 +30,14 @@ function Price() {
             quality={50}
             className="hidden sm:block"
           />
-          <Image
-            src={mobileCard}
-            width={700}
-            height={700}
-            alt="Mobile price card"
-            quality={50}
-            className="sm:hidden mt-5 sm:mt-0"
-          />
         </div>
-
         <div className="image-container sm:hidden">
           <Image
-            src={desktopCard}
-            width={700}
-            height={700}
-            alt="Desktop price card"
-            quality={35}
-            className="hidden sm:block"
-          />
-          <Image
             src={mobileCard}
-            width={700}
-            height={700}
+            width={400}
+            height={400}
             alt="Mobile price card"
-            quality={35}
+            quality={30}
             className="sm:hidden mt-5 sm:mt-0"
           />
         </div>
