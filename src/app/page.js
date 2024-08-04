@@ -11,6 +11,7 @@ import Price from "./components/Price";
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <Hero />
       <CoverVideo />
       <Service />

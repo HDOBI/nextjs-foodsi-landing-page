@@ -1,37 +1,81 @@
-'use client'
-import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-scroll';
-import navMenu from '../utility/navbar.json'
+"use client"
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
+import navMenu from "../utility/navbar.json";
+import Image from "next/image";
+import logo from "@/app/assets/images/LOGO-nav.png";
+import Button from "./Button";
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false);
 
-    const handleClick = () => setNav(!nav);
+  const handleClick = () => setNav(!nav);
 
-    return (
-        <div className='fixed bg-white w-full h-16 navbar z-10'>
-            <div className="fixed w-full max-w-6xl mx-auto left-0 right-0 h-16 flex justify-between items-center px-3 text-black">
-                <div className="text-2xl font-bold">
-                    <h1>SpreeOps</h1>
-                </div>
-                <ul className={`md:flex ${nav ? 'translate-x-0 text-center' : '-translate-x-full'} transform md:transform-none text-[16.5px] font-semibold transition-transform duration-300 ease-in-out flex-col md:flex-row items-center w-full md:w-auto space-y-6 md:space-y-0 md:space-x-10 absolute md:relative bg-white md:bg-transparent top-16 md:top-0 left-0 md:left-auto md:py-0 py-4`}>
-                    {
-                        navMenu.map((item, id) => (
-                            <li key={id}>
-                                <Link className='cursor-pointer' onClick={() => setNav(false)} to={item.link} smooth={true} duration={500}>
-                                    {item.title}
-                                </Link>
-                            </li>
-                        ))
-                    }
-                </ul>
-                <div onClick={handleClick} className="md:hidden cursor-pointer z-10">
-                    {!nav ? <FaBars size={25} /> : <FaTimes size={25} />}
-                </div>
+  return (
+    <nav className="fixed w-full h-20 navbar z-10 bg-whiteSmoke">
+      <div className="container mx-auto max-w-[1200px] px-3 text-black">
+        <div className="flex items-center justify-between h-20">
+          <div className="flex items-center gap-8">
+            <Image
+              src={logo}
+              width={120}
+              height={120}
+              alt="logo"
+              priority
+              quality={25}
+              blurDataURL="data:..."
+              placeholder="blur"
+              className="max-w-[90px] sm:max-w-[120px] h-auto"
+            />
+            <ul
+              className={`md:flex ${
+                nav ? "translate-x-0 text-center" : "-translate-x-full"
+              } transform md:transform-none text-[16px] font-normal transition-transform duration-300 ease-in-out flex-col md:flex-row items-center w-full md:w-auto space-y-6 md:space-y-0 md:space-x-10 absolute md:relative bg-whiteSmoke md:bg-transparent top-20 md:top-0 left-0 md:left-auto md:py-0 py-4 pb-8`}
+            >
+              {navMenu.map((item, id) => (
+                <li key={id}>
+                  <Link
+                    className="cursor-pointer"
+                    onClick={() => setNav(false)}
+                    to={item.link}
+                    smooth={true}
+                    duration={500}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+              <div className="md:hidden max-w-[130px] mx-auto">
+                <Button
+                  name="Contact Us"
+                  className="font-normal pt-1 pb-2 px-7 text-[15.5px]"
+                />
+              </div>
+            </ul>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="md:block hidden">
+              <Button
+                name="Contact Us"
+                className="font-normal pt-1 pb-2 px-7 text-[15.5px]"
+              />
             </div>
+            <div
+              onClick={handleClick}
+              className="md:hidden cursor-pointer z-10"
+            >
+              {!nav ? (
+                <FaBars size={27} className="text-orange" />
+              ) : (
+                <FaTimes size={27} className="text-orange" />
+              )}
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

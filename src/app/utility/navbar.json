@@ -1,19 +1,14 @@
 [
-    {
-      "title": "Home",
-      "link": "home"
-    },
-    {
-      "title": "Services",
-      "link": "services"
-    },
-    {
-        "title": "About",
-        "link": "about"
-      },
-    {
-      "title": "Contact",
-      "link": "contact"
-    }
-  ]
-  
+  {
+    "title": "Features",
+    "link": "features"
+  },
+  {
+    "title": "Pricing",
+    "link": "pricing"
+  },
+  {
+    "title": "Contact Us",
+    "link": "contact Us"
+  }
+]
