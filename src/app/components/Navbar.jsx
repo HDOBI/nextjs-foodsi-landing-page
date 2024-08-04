@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import navMenu from "../utility/navbar.json";
 import Image from "next/image";
 import logo from "@/app/assets/images/LOGO-nav.png";
@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="fixed w-full h-20 navbar z-10 bg-whiteSmoke">
+    <nav className="w-full h-20 navbar z-10 bg-whiteSmoke">
       <div className="container mx-auto max-w-[1200px] px-3 text-black">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-8">
@@ -38,28 +38,31 @@ const Navbar = () => {
                   <Link
                     className="cursor-pointer"
                     onClick={() => setNav(false)}
-                    to={item.link}
-                    smooth={true}
-                    duration={500}
+                    href={`#${item.link}`}
                   >
                     {item.title}
                   </Link>
                 </li>
               ))}
               <div className="md:hidden max-w-[130px] mx-auto">
-                <Button
-                  name="Contact Us"
-                  className="font-normal pt-1 pb-2 px-7 text-[15.5px]"
-                />
+                <Link href="#contact">
+                  {" "}
+                  <Button
+                    name="Contact Us"
+                    className="font-normal pt-1 pb-2 px-7 text-[15.5px]"
+                  />
+                </Link>
               </div>
             </ul>
           </div>
           <div className="flex items-center gap-4">
             <div className="md:block hidden">
-              <Button
-                name="Contact Us"
-                className="font-normal pt-1 pb-2 px-7 text-[15.5px]"
-              />
+              <Link href="#contact">
+                <Button
+                  name="Contact Us"
+                  className="font-normal pt-1 pb-2 px-7 text-[15.5px]"
+                />
+              </Link>
             </div>
             <div
               onClick={handleClick}

@@ -4,7 +4,7 @@ import data from "@/app/utility/service.json";
 
 function Service() {
   return (
-    <div>
+    <div id="features">
       {data.map((item, id) => (
         <div key={id} className={id % 2 === 1 ? "bg-whiteSmoke" : undefined}>
           <div

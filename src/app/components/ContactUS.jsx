@@ -23,7 +23,7 @@ function ContactUS() {
   }
 
   return (
-    <div className="flex flex-col gap-3 max-w-[700px] mx-auto py-10 sm:py-20 px-3">
+    <div className="flex flex-col gap-3 max-w-[700px] mx-auto py-10 sm:py-20 px-3" id="contact">
       <h5 className="text-[40px] leading-[45px] sm:text-[45px] sm:leading-[50px] font-semibold text-center">
         Contact us
       </h5>
