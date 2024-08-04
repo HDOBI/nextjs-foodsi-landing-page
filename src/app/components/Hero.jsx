@@ -27,7 +27,7 @@ function Hero() {
             src={mobile}
             height={550}
             alt="Mobile"
-            priority
+            priority={true}
             quality={50}
             lazy={true} 
             className="hidden sm:block"

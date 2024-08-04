@@ -12,7 +12,7 @@ function ScanMe() {
         <Image
           src={QR}
           alt="QR code"
-          priority
+          priority={true}
           quality={25}
         />
       </div>

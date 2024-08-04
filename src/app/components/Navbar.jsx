@@ -22,7 +22,7 @@ const Navbar = () => {
               width={120}
               height={120}
               alt="logo"
-              priority
+              priority={true}
               quality={18}
               className="max-w-[90px] sm:max-w-[120px] h-auto"
             />
