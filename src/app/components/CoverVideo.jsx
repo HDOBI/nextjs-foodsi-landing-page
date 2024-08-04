@@ -9,6 +9,7 @@ function CoverVideo() {
         autoPlay
         muted
         loop
+        controls
         playsInline
         aria-label="Cover video showing a dining experience"
       />

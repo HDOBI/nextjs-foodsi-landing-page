@@ -2,13 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.navbar ul {
-  display: none;
-}
 
-.navbar ul.show {
-  display: block;
-}
 
 html {
   scroll-behavior: smooth !important;

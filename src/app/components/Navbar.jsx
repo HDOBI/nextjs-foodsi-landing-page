@@ -35,7 +35,7 @@ const Navbar = () => {
               className={`md:flex ${
                 nav ? "translate-x-0 text-center" : "-translate-x-full"
               } transform md:transform-none text-[16px] font-normal transition-transform duration-300 ease-in-out flex-col md:flex-row items-center w-full md:w-auto space-y-6 md:space-y-0 md:space-x-10 absolute md:relative bg-whiteSmoke md:bg-transparent top-20 md:top-0 left-0 md:left-auto md:py-0 py-4 pb-8 ${
-                loaded ? (nav ? "show" : "") : ""
+                loaded ? (nav ? "" : "") : ""
               }`}
             >
               {navMenu.map((item, id) => (
