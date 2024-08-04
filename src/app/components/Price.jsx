@@ -6,7 +6,7 @@ import mobileCard from "@/app/assets/images/CARD MOBILE.png";
 
 function Price() {
   return (
-    <div className="price-container bg-whiteSmoke" id="pricing">
+    <div className="price-container bg-whiteSmoke flex items-center justify-center" id="pricing">
       <div
         className="max-w-[700px] mx-auto flex flex-col gap-3 sm:gap-5 py-8 sm:py-14 px-3 lg:px-0"
         aria-label="Price section"
@@ -34,8 +34,8 @@ function Price() {
         <div className="image-container sm:hidden">
           <Image
             src={mobileCard}
-            width={700}
-            height={700}
+            width={400}
+            height={400}
             alt="Mobile price card"
             quality={30}
             className="sm:hidden mt-5 sm:mt-0"
