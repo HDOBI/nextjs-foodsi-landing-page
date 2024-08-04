@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import mobile from "@/app/assets/images/mobile.png";
 import ScanMe from "./ScanMe";
-import Link from "next/link";
 
 function Hero() {
   return (
@@ -30,8 +29,7 @@ function Hero() {
             alt="Mobile"
             priority
             quality={50}
-            blurDataURL="data:..."
-            placeholder="blur"
+     
           />
         </div>
       </div>
