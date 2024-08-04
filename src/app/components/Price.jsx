@@ -21,21 +21,21 @@ function Price() {
           A plan for every restaurant <br></br> Try a 60 Day Free trial of our{" "}
           <span className="text-orange font-semibold">Pro plan!</span>
         </p>
-        <div className="image-container">
+        <div className="image-container hidden sm:block">
           <Image
             src={desktopCard}
-            width={800}
-            height={800}
+            width={700}
+            height={700}
             alt="Desktop price card"
-            quality={70}
+            quality={50}
             className="hidden sm:block"
           />
           <Image
             src={mobileCard}
-            width={800}
-            height={800}
+            width={700}
+            height={700}
             alt="Mobile price card"
-            quality={80}
+            quality={50}
             className="sm:hidden mt-5 sm:mt-0"
           />
         </div>
