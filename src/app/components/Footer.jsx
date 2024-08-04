@@ -15,8 +15,6 @@ const Footer = () => {
               height={100}
               alt="Foodsi logo"
               quality={25}
-              blurDataURL="data:..."
-              placeholder="blur"
               className="w-[60px] sm:w-[75px] h-auto"
             />
           </figure>

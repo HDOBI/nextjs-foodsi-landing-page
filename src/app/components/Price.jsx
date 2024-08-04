@@ -28,8 +28,6 @@ function Price() {
             height={800}
             alt="Desktop price card"
             quality={70}
-            blurDataURL="data:..."
-            placeholder="blur"
             className="hidden sm:block"
           />
           <Image
@@ -38,8 +36,6 @@ function Price() {
             height={800}
             alt="Mobile price card"
             quality={80}
-            blurDataURL="data:..."
-            placeholder="blur"
             className="sm:hidden mt-5 sm:mt-0"
           />
         </div>

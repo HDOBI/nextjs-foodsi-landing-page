@@ -46,8 +46,6 @@ function Service() {
                   alt={item.heading}
                   quality={50}
                   priority={true}
-                  blurDataURL="data:..."
-                  placeholder="blur"
                   className="w-[400px] h-[400px] sm:w-[500px] sm:h-[500px] object-cover rounded-[27px] sm:rounded-[20px]"
                 />
               )}
