@@ -27,7 +27,7 @@ function Price() {
             width={800}
             height={800}
             alt="Desktop price card"
-            quality={80}
+            quality={70}
             blurDataURL="data:..."
             placeholder="blur"
             className="hidden sm:block"
