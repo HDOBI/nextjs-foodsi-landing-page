@@ -6,7 +6,7 @@ import Logo from "@/app/assets/images/footer-icon.png";
 const Footer = () => {
   return (
     <footer className="bg-whiteSmoke">
-      <div className="container max-w-[1400px] mx-auto flex items-center justify-between py-10 px-3 lg:px-0">
+      <div className="container max-w-[1300px] mx-auto flex items-center justify-between py-10 px-3">
         <div className="flex items-center gap-3 sm:gap-5">
           <figure>
             <Image
