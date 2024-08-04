@@ -29,14 +29,16 @@ function Hero() {
             alt="Mobile"
             priority
             quality={50}
+            lazy={true} 
             className="hidden sm:block"
           />
           <Image
             src={mobile}
-            height={550}
+            height={300}
             alt="Mobile"
             priority
             quality={25}
+            lazy={true} 
             className="sm:hidden"
           />
         </div>
