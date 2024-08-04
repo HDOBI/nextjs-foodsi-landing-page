@@ -14,8 +14,6 @@ function ScanMe() {
           alt="QR code"
           priority
           quality={25}
-          blurDataURL="data:..."
-          placeholder="blur"
         />
       </div>
     </div>
