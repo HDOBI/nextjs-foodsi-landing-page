@@ -34,8 +34,8 @@ function Price() {
         <div className="image-container sm:hidden">
           <Image
             src={mobileCard}
-            width={400}
-            height={400}
+            width={700}
+            height={700}
             alt="Mobile price card"
             quality={30}
             className="sm:hidden mt-5 sm:mt-0"
