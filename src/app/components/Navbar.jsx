@@ -23,9 +23,7 @@ const Navbar = () => {
               height={120}
               alt="logo"
               priority
-              quality={25}
-              blurDataURL="data:..."
-              placeholder="blur"
+              quality={18}
               className="max-w-[90px] sm:max-w-[120px] h-auto"
             />
             <ul
