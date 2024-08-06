@@ -25,7 +25,7 @@ const Navbar = () => {
             <Image
               src={logo}
               width={120}
-              height={120}
+              height="auto"
               alt="logo"
               priority={true}
               quality={18}

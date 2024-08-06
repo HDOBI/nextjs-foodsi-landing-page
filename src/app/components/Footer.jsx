@@ -6,7 +6,7 @@ import Logo from "@/app/assets/images/footer-icon.png";
 const Footer = () => {
   return (
     <footer className="bg-whiteSmoke">
-      <div className="container max-w-[1300px] mx-auto flex items-center justify-between py-10 px-3">
+      <div className="container max-w-[1300px] mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between py-8 sm:py-10 px-3">
         <div className="flex items-center gap-3 sm:gap-5">
           <figure>
             <Image
@@ -33,7 +33,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <small className="text-[15.5px] sm:text-[17px] pt-[20px]">
+        <small className="text-[15.5px] sm:text-[17px] pt-[13px] sm:pt-[20px]">
           &copy; Copyright 2024. All rights reserved.
         </small>
       </div>

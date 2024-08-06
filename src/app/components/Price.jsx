@@ -6,7 +6,10 @@ import mobileCard from "@/app/assets/images/CARD MOBILE.png";
 
 function Price() {
   return (
-    <div className="price-container bg-whiteSmoke flex items-center justify-center" id="pricing">
+    <div
+      className="price-container bg-whiteSmoke flex items-center justify-center"
+      id="pricing"
+    >
       <div
         className="max-w-[700px] mx-auto flex flex-col gap-3 sm:gap-5 py-8 sm:py-14 px-3 lg:px-0"
         aria-label="Price section"
