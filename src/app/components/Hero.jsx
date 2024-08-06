@@ -38,7 +38,7 @@ function Hero() {
             height="auto"
             alt="Mobile"
             priority={true}
-            quality={15}
+            quality={10}
             className="sm:hidden"
           />
         </div>
