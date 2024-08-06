@@ -25,7 +25,8 @@ function Hero() {
         <div className="max-w-[250px] md:max-w-[300px] lg:max-w-[500px]">
           <Image
             src={mobile}
-            height={550}
+            width={500}
+            height="auto"
             alt="Mobile"
             priority={true}
             quality={50}
@@ -33,9 +34,10 @@ function Hero() {
           />
           <Image
             src={mobile}
-            height={300}
+            width={300}
+            height="auto"
             alt="Mobile"
-            priority
+            priority={true}
             quality={25}
             className="sm:hidden"
           />
