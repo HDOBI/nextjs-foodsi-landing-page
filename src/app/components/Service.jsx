@@ -14,7 +14,7 @@ function Service() {
                 : "flex-col lg:flex-row"
             }`}
           >
-            <div className="lg:w-1/2 flex flex-col gap-4 sm:gap-6 items-center justify-center text-center">
+            <div className="lg:w-1/2 flex flex-col gap-4 sm:gap-6 items-center justify-center text-center" data-aos="fade-right">
               <h5 className="max-w-[340px] text-[40px] leading-[45px] sm:text-[45px] sm:leading-[50px] font-semibold">
                 {item.heading}
               </h5>
@@ -23,7 +23,7 @@ function Service() {
               </p>
             </div>
             <div
-              className={`lg:w-1/2 flex ${
+             data-aos="fade-left"  className={`lg:w-1/2 flex ${
                 id % 2 === 1
                   ? "justify-center lg:justify-start"
                   : "justify-center lg:justify-end"

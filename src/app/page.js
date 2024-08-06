@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/image";
+import { useEffect } from 'react';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import CoverVideo from "./components/CoverVideo";
@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 import Price from "./components/Price";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 export default function Home() {
 
