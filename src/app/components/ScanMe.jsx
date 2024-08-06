@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import QR from "@/app/assets/images/qr.svg";
@@ -13,13 +14,18 @@ function ScanMe() {
           <Image src={QR} alt="QR code" priority={true} quality={10} />
         </div>
       </div>
-      <p className="text-[15.5px] sm:text-[17.5px] max-w-[95px] sm:max-w-[110px] flex justify-end">
-        Or{" "}
-        <span className="font-semibold mr-0.5 sm:mr-3 pl-0.5 sm:pl-1">
-          {" "}
-          click here
-        </span>
-      </p>
+      <a
+        onClick={() => window.open("https://github.com/Hassan-154", "_blank")}
+        className="cursor-pointer"
+      >
+        <p className="text-[15.5px] sm:text-[17.5px] max-w-[95px] sm:max-w-[110px] flex justify-end">
+          Or{" "}
+          <span className="font-semibold mr-0.5 sm:mr-3 pl-0.5 sm:pl-1">
+            {" "}
+            click here
+          </span>
+        </p>
+      </a>
     </div>
   );
 }
