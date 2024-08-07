@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 function CoverVideo() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, []);
+
   return (
     <div className="relative">
       <video
+        ref={videoRef}
         className="h-[30vh] sm:h-[55vh] w-full object-cover"
         src="videos/cover-1080p.mp4"
         autoPlay
