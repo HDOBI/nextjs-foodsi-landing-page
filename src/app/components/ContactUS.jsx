@@ -23,7 +23,11 @@ function ContactUS() {
   }
 
   return (
-    <div className="flex flex-col gap-3 max-w-[700px] mx-auto py-10 sm:py-20 px-3" id="contact" data-aos="fade-up">
+    <div
+      className="flex flex-col gap-3 max-w-[700px] mx-auto py-10 sm:py-20 px-3"
+      id="contact"
+      data-aos="fade-up"
+    >
       <h5 className="text-[40px] leading-[45px] sm:text-[45px] sm:leading-[50px] font-semibold text-center">
         Contact us
       </h5>
@@ -64,10 +68,17 @@ function ContactUS() {
         className="mt-1 sm:mt-2 py-3 sm:py-2 text-[21px] sm:text-[17px]"
         onClick={submitUserData}
       />
-      <p className="font-medium text-center sm:text-left">
-        By submitting this form, I agree to the{" "}
-        <span className="text-orange">privacy policy.</span>
-      </p>
+      <div>
+        <p
+          onClick={() =>
+            window.open("https://www.foodsiapp.com/terms", "_blank")
+          }
+          className="font-medium text-center sm:text-left cursor-pointer"
+        >
+          By submitting this form, I agree to the{" "}
+          <span className="text-orange">privacy policy.</span>
+        </p>
+      </div>
     </div>
   );
 }

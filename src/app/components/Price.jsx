@@ -3,6 +3,7 @@ import data from "@/app/utility/peice.json";
 import { IoHomeOutline } from "react-icons/io5";
 import Button from "./Button";
 import { CiCircleCheck } from "react-icons/ci";
+import Link from "next/link";
 
 function Price() {
 
@@ -41,12 +42,14 @@ function Price() {
                 {plan.price}
               </p>
               <p className="text-[20px]">{plan.subheading}</p>
+              <Link href="#contact">
               <Button
                 name={data.buttonName}
                 className={`!text-black pt-0.5 pb-0.5 ${
                   id === 1 ? "!text-white" : ""
                 }`}
               />
+              </Link>
               <ul className="text-[16px] font-normal mt-1">
                 {plan.benefits.map((benefit, i) => (
                   <div>
