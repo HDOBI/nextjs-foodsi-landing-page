@@ -36,6 +36,7 @@ function Service() {
                   autoPlay
                   muted
                   loop
+                  preload="auto"
                   aria-label="Cover video showing a dining experience"
                 />
               ) : (
