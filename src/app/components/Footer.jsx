@@ -26,10 +26,10 @@ const Footer = () => {
               Build your digital menu.
             </p>
             <Link
-              href="mailto:info@foodsiapp.com"
+              href="mailto:info@foodsiapp.com "
               className="text-[15px] sm:text-[17px] -mt-1"
             >
-              info@foodsiapp.com
+              info@foodsiapp.com 
             </Link>
           </div>
         </div>

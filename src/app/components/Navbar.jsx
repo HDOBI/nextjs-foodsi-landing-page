@@ -18,7 +18,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full h-20 navbar z-10 bg-whiteSmoke">
+    <nav className="fixed w-full h-20 navbar z-10 bg-whiteSmoke">
       <div className="container mx-auto max-w-[1200px] px-3 text-black">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-8">
@@ -34,7 +34,7 @@ const Navbar = () => {
             <ul
               className={`md:flex ${
                 nav ? "translate-x-0 text-center" : "-translate-x-full"
-              } transform md:transform-none text-[16px] font-normal transition-transform duration-300 ease-in-out flex-col md:flex-row items-center w-full md:w-auto space-y-6 md:space-y-0 md:space-x-10 absolute md:relative bg-whiteSmoke md:bg-transparent top-20 md:top-0 left-0 md:left-auto md:py-0 py-4 pb-8 ${
+              } transform md:transform-none text-[16px] font-normal transition-transform duration-300 ease-in-out flex-col md:flex-row items-center w-full md:w-auto space-y-6 md:space-y-0 md:space-x-10 absolute md:relative bg-whiteSmoke z-88 md:bg-transparent top-20 md:top-0 left-0 md:left-auto md:py-0 py-4 pb-8 ${
                 loaded ? (nav ? "" : "") : ""
               }`}
             >
