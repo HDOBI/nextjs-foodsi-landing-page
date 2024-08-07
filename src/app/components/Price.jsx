@@ -1,17 +1,19 @@
 import React from "react";
-import Image from "next/image";
-
-import desktopCard from "@/app/assets/images/CARD DESKTOP.png";
-import mobileCard from "@/app/assets/images/CARD MOBILE.png";
+import data from "@/app/utility/peice.json";
+import { IoHomeOutline } from "react-icons/io5";
+import Button from "./Button";
+import { CiCircleCheck } from "react-icons/ci";
 
 function Price() {
+  console.log("price:", data);
+
   return (
     <div
       className="price-container bg-whiteSmoke flex items-center justify-center"
       id="pricing"
     >
       <div
-        className="max-w-[700px] mx-auto flex flex-col gap-3 sm:gap-5 py-8 sm:py-14 px-3 lg:px-0"
+        className="max-w-[615px] mx-auto flex flex-col gap-3 sm:gap-8 py-10 sm:py-12 px-3 lg:px-0"
         aria-label="Price section"
       >
         <h2 className="text-[40px] leading-[45px] sm:text-[45px] sm:leading-[50px] font-semibold text-center">
@@ -24,25 +26,43 @@ function Price() {
           A plan for every restaurant <br></br> Try a 60 Day Free trial of our{" "}
           <span className="text-orange font-semibold">Pro plan!</span>
         </p>
-        <div className="image-container hidden sm:block">
-          <Image
-            src={desktopCard}
-            width={700}
-            height={700}
-            alt="Desktop price card"
-            quality={50}
-            className="hidden sm:block"
-          />
-        </div>
-        <div className="image-container sm:hidden">
-          <Image
-            src={mobileCard}
-            width={400}
-            height={400}
-            alt="Mobile price card"
-            quality={30}
-            className="sm:hidden mt-5 sm:mt-0"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {data.plans.map((plan, id) => (
+            <div
+              key={id}
+              className={`flex flex-col gap-2 p-5 rounded-[15px] shadow-lg ${
+                id === 1 ? "bg-[#171717] text-white" : "bg-white"
+              }`}
+            >
+              <div className="flex items-center gap-1.5">
+                <IoHomeOutline size={25} />
+                <span className="text-[17px]">{plan.heading}</span>
+              </div>
+              <p className="text-[30px] font-semibold leading-[33px]">
+                {plan.price}
+              </p>
+              <p className="text-[20px]">{plan.subheading}</p>
+              <Button
+                name={data.buttonName}
+                className={`!text-black pt-0.5 pb-0.5 ${
+                  id === 1 ? "!text-white" : ""
+                }`}
+              />
+              <ul className="text-[16px] font-normal mt-1">
+                {plan.benefits.map((benefit, i) => (
+                  <div>
+                    <div className="flex gap-1 items-center">
+                      <CiCircleCheck size={21} className="text-orange" />
+                      <li key={i} className="">
+                        {benefit}
+                      </li>
+                    </div>
+                    <div className="border-t border-gray-400 my-[3px]"></div>
+                  </div>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </div>

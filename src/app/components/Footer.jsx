@@ -5,7 +5,7 @@ import Logo from "@/app/assets/images/footer-icon.png";
 
 const Footer = () => {
   return (
-    <footer  data-aos="fade-up" className="bg-whiteSmoke">
+    <footer className="bg-whiteSmoke">
       <div className="container max-w-[1300px] mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between py-8 sm:py-10 px-3">
         <div className="flex items-center gap-3 sm:gap-5">
           <figure>

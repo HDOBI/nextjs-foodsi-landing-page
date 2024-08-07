@@ -15,7 +15,7 @@ function ScanMe() {
         </div>
       </div>
       <a
-        onClick={() => window.open("https://github.com/Hassan-154", "_blank")}
+        onClick={() => window.open("https://m.foodsiapp.com/s/wave-sushi/m", "_blank")}
         className="cursor-pointer"
       >
         <p className="text-[15.5px] sm:text-[17.5px] max-w-[95px] sm:max-w-[110px] flex justify-end">

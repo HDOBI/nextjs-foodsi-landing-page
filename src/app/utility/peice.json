@@ -1,0 +1,29 @@
+{
+  "buttonName": "Contact us",
+  "plans": [
+    {
+      "logo": "images/logo.png",
+      "price": "$25",
+      "heading": "Lite",
+      "subheading": "Per month billed annually USD 30 billed monthly",
+      "benefits": [
+        "1500 scans per month",
+        "Unlimited menu and dishes",
+        "Uber Eats Integration",
+        "Google Reviews"
+      ]
+    },
+    {
+      "logo": "images/logo.png",
+      "price": "$35",
+      "heading": "Pro",
+      "subheading": "Per month billed annually USD 40 billed monthly",
+      "benefits": [
+        "Unlimited scans",
+        "Unlimited menu and dishes",
+        "Uber Eats Integration",
+        "Google Reviews"
+      ]
+    }
+  ]
+}
