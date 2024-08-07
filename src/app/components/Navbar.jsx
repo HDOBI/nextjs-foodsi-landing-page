@@ -49,15 +49,6 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <div className="md:hidden max-w-[130px] mx-auto">
-                <Link href="#contact">
-                  {" "}
-                  <Button
-                    name="Contact Us"
-                    className="font-normal pt-1 pb-2 px-7 text-[15.5px]"
-                  />
-                </Link>
-              </div>
             </ul>
           </div>
           <div className="flex items-center gap-4">
