@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Navbar />
       <Hero />
       <CoverVideo />
