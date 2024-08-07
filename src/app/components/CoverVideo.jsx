@@ -10,6 +10,7 @@ function CoverVideo() {
         muted
         loop
         playsInline
+        webkit-playsinline="true"
         preload="metadata"
         aria-label="Cover video showing a dining experience"
       />

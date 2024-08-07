@@ -5,7 +5,6 @@ import Button from "./Button";
 import { CiCircleCheck } from "react-icons/ci";
 
 function Price() {
-  console.log("price:", data);
 
   return (
     <div
