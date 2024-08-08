@@ -70,9 +70,9 @@ function ContactUS() {
       />
       <div>
         <p
-          onClick={() =>
-            window.open("https://www.foodsiapp.com/terms", "_blank")
-          }
+          // onClick={() =>
+          //   window.open("https://www.foodsiapp.com/terms", "_blank")
+          // }
           className="font-medium text-center sm:text-left cursor-pointer"
         >
           By submitting this form, I agree to the{" "}
