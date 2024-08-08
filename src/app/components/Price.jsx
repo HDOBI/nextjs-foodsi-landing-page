@@ -30,7 +30,7 @@ function Price() {
           <span className="text-orange font-semibold">Pro plan!</span>
         </p>
         <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-10"
+          className="max-w-[280px] mx-auto sm:max-w-full mt-3 sm:mt-0 grid grid-cols-1 md:grid-cols-2 gap-10"
           data-aos="fade-up"
         >
           {data.plans.map((plan, id) => (

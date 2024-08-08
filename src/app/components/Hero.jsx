@@ -21,7 +21,10 @@ function Hero() {
           <ScanMe />
         </div>
       </div>
-      <div className="lg:w-1/2 mt-1 lg:mt-0 flex items-center justify-center" data-aos="fade-left">
+      <div
+        className="lg:w-1/2 mt-1 lg:mt-0 flex items-center justify-center"
+        data-aos="fade-left"
+      >
         <div className="lg:hidden min-w-[150px]">
           <ScanMe />
         </div>

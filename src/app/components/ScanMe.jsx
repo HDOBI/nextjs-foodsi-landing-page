@@ -15,8 +15,10 @@ function ScanMe() {
         </div>
       </div>
       <a
-        onClick={() => window.open("https://m.foodsiapp.com/s/wave-sushi/m", "_blank")}
-        className="cursor-pointer"
+        onClick={() =>
+          window.open("https://m.foodsiapp.com/s/wave-sushi/m", "_blank")
+        }
+        className="cursor-pointer block sm:hidden"
       >
         <p className="text-[15.5px] sm:text-[17.5px] max-w-[95px] sm:max-w-[110px] flex justify-end">
           Or{" "}
