@@ -29,6 +29,7 @@ export default function Home() {
       <Price />
       <ContactUS />
       <Footer />
+      <Form/>
     </div>
   );
 }

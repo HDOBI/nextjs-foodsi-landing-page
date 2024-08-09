@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
-    const { userInfo: { name, email, message } } = await req.json();
+    const { name } = await req.json();
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,
