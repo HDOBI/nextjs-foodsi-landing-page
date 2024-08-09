@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import Input from "./Input";
-import Button from "./Button";
+import Input from "./components/Input";
+import Button from "./components/Button";
 
 function ContactUS() {
+
   const [userInfo, setUserInfo] = useState({
     name: "",
     email: "",
@@ -18,9 +19,29 @@ function ContactUS() {
     }));
   };
 
-  function submitUserData() {
-    console.log("userInfo:", JSON.stringify(userInfo, null, 2));
-  }
+  // function submitUserData() {
+  //   console.log("userInfo:", JSON.stringify(userInfo, null, 2));
+  // }
+
+  const submitUserData = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userInfo:userInfo }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
 
   return (
     <div
@@ -69,12 +90,7 @@ function ContactUS() {
         onClick={submitUserData}
       />
       <div>
-        <p
-          // onClick={() =>
-          //   window.open("https://www.foodsiapp.com/terms", "_blank")
-          // }
-          className="font-medium text-center sm:text-left cursor-pointer"
-        >
+        <p className="font-medium text-center sm:text-left cursor-pointer">
           By submitting this form, I agree to the{" "}
           <span className="text-orange">privacy policy.</span>
         </p>
